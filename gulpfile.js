@@ -17,27 +17,27 @@ const plumber = require('gulp-plumber');
 const paths = {
   html: {
     src: './app/**/*.html',
-    dest: './build'
+    dest: './docs'
   },
   styles: {
     src: './app/scss/**/*.scss',
-    dest: './build/assets/css'
+    dest: './docs/assets/css'
   },
   scripts: {
     src: './app/js/**/*.js',
-    dest: './build/assets/js'
+    dest: './docs/assets/js'
   },
   vendors: {
     src: './app/js/vendors/**/*.js',
-    dest: './build/assets/js'
+    dest: './docs/assets/js'
   },
   images: {
     src: './app/images/**/*',
-    dest: './build/assets/images'
+    dest: './docs/assets/images'
   },
   favicon: {
     src: './app/favicon.ico',
-    dest: './build'
+    dest: './docs'
   }
 };
 
@@ -129,7 +129,7 @@ const favicon = () =>
 function watchFiles() {
   browserSync.init({
     server: {
-      baseDir: './build'
+      baseDir: './docs'
     },
     notify: false
   });
