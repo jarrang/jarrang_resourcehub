@@ -14,3 +14,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
+
+.bg {
+  background-image: url("/assets/images/email-pattern.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat;
+}
