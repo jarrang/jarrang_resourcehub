@@ -1,0 +1,3 @@
+    <div>
+      <p class="center">Last updated {{ last_updated | safe }}</p>
+    </div>

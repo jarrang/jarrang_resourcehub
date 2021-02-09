@@ -1,0 +1,47 @@
+    <div class="row">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner shadow-sm">
+          <div class="carousel-item active">
+            <a href="https://www.youtube.com/watch?v=vbg7eFkcPKk&t=81s" target="_blank">
+              <img src="{{ image_1 | safe }}" class="d-block w-100" alt="...">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jarrang Podcast</h5>
+              <p>Listen to the latest episode</p>
+            </div>
+          </div>
+          </a>
+          <div class="carousel-item">
+            <a href="https://files.jarrang.com/Jarrang/process-visualisation/index.html" target="_blank">
+              <img src="{{ image_2 | safe }}" class="d-block w-100" alt="...">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Process Visualisation</h5>
+              <p>View all of our internal processes in one place</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="https://vmv.jarrang.com/" target="_blank">
+              <img src="{{ image_3 | safe }}" class="d-block w-100" alt="...">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vision Mission Values</h5>
+              <p>Find out what Jarrang is all about</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>

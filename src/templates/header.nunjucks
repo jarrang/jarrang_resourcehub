@@ -1,0 +1,7 @@
+  <!-- Image and text -->
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="https://uploads-ssl.webflow.com/5eb175b8c8c08b3a053f61b5/5eb2c8a01e474ea3e3aedd32_jarrang_logo_vector_CMYK_untextured.svg" width="150" height="32" class="d-inline-block align-top logo" alt="">
+      Resource Hub
+    </a>
+  </nav>

@@ -1,72 +1,33 @@
-# Gulp Boilerplate [![Build Status](https://travis-ci.com/LucasWinkler/gulp-boilerplate.svg?token=6xPTYyj9yJazuMpzepqi&branch=master)](https://travis-ci.com/LucasWinkler/gulp-boilerplate)
+## 🥤Gulp Boilerplate (4)
 
-A simple boilerplate for front-end web development which uses [Gulp](https://gulpjs.com/) v4.
+A basic Gulp 4 boilerplate to get developing locally with a few helpful tools already set up.
 
-This is my first time trying gulp so it won't be perfect. I just wanted to create a basic template to work off of with a file structure I liked.
+Tasks included:
 
-## Features
+- HTML minify (on build)
+- CSS autoprefixer
+- Sass minify
+- JS minify
+- Image minify
+- Nunjucks
+- Live reload
+- Babel
 
-- Live reloading
-- Cache busting
-- SCSS converted to css, auto prefixed and minified with sourcemaps)
-- Javascript concatenated into a single file, minified with sourcemaps and supports ES6)
-- Image minifying
+## How to run
+Install Gulp globally (if you don't already have it). Full installation docs (https://gulpjs.com/docs/en/getting-started/quick-start).
 
-## Getting Started
+    npm install gulp-cli -g
+Install necessary packages
 
-Follow these steps in order to get the website up and running locally on your machine.
+    npm install
+Run Gulp.
 
-### Installation
+    gulp
 
-- `npm install` to install any dependencies
-- `npm start` or `gulp watch` to start a live reload session
+The live reload task should then initiate the project on http://localhost:3000. If that port is already taken it will default to another number such as localhost:3001.
 
-### Building
+## Building assets
 
-- `npm run build` or `gulp` to build the application
+To build assets without starting a local server with live reload, use the build command:
 
-### Extras
-
-- `gulp` or `gulp build` to build the application
-- `gulp watch` to enable live reload
-- `gulp clean` to delete the build folder
-- `gulp styles` to run the style tasks
-- `gulp scripts` to run the script tasks
-- `gulp images` to run the image tasks
-- `gulp favicon` to run the favicon tasks
-
-## File Structure
-
-```bash
-├── app
-│   ├── images
-│   │
-│   ├── js
-│   │   ├── main.js
-│   │   │
-│   │   └── vendors
-│   │
-│   └── scss
-│       ├── abstracts
-│       │
-│       ├── base
-│       │
-│       ├── pages
-│       │
-│       └── main.scss
-│
-└── build
-    ├── images
-    │
-    ├── js
-    │   ├── app.min.js
-    │   │
-    │   └── vendors.min.js
-    │
-    └── css
-        └── styles.min.css
-```
-
-## Tips
-
-- You can use any file structure for your javascript and scss files. The one provided is an example.
+    gulp build
