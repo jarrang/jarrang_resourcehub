@@ -21,17 +21,9 @@ const babel = require('gulp-babel');
 
 // Optimise Images
 function imageMin(cb) {
-    gulp.src("src/assets/images/*")
+    gulp.src("src/assets/images/**/*")
         .pipe(imagemin())
         .pipe(gulp.dest("docs/images"));
-    cb();
-}
-
-// Optimise Images
-function imageMin(cb) {
-    gulp.src("src/assets/images/images-assets/*")
-        .pipe(imagemin())
-        .pipe(gulp.dest("docs/images/images-assets/"));
     cb();
 }
 
