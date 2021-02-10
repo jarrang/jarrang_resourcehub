@@ -1,3 +1,5 @@
+{# Run 'gulp' in the terminal to render #}
+
 {% include "head.nunjucks" %}
 
     {% include "header.nunjucks" %}
@@ -10,13 +12,15 @@
         {% set subtitle = "This is a place to bring together all the various projects and resources that we use internally. If there is something missing that you would like added, contact <a href='mailto:rob@jarrang.com' target='_blank'>Rob Moran</a>" %}
         {% include "alert.nunjucks" %}
 
-        {% set image_1 = "https://files.jarrang.com/Jarrang/resource-hub/images/carousel/slideshow1.jpg" %}
-        {% set image_2 = "https://files.jarrang.com/Jarrang/resource-hub/images/carousel/slideshow2.jpg" %}
-        {% set image_3 = "https://files.jarrang.com/Jarrang/resource-hub/images/carousel/slideshow3.jpg" %}
+        {# To edit these images, simply make any edits to the Photoshop file and generate images #}
+        {% set image_1 = "images/images-assets/slideshow1.jpg" %}
+        {% set image_2 = "images/images-assets/slideshow2.jpg" %}
+        {% set image_3 = "images/images-assets/slideshow3.jpg" %}
         {% include "carousel.nunjucks" %}
 
         {% include "spacer.nunjucks" %}
 
+        {# Each set of three list groups requires a new row #}
         <div class="row">
 
           {% set title = "Documentation" %}
