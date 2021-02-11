@@ -25,30 +25,66 @@
 
           {% set title = "Documentation" %}
           {% set items = [
-            { title: "Jarrang Wiki", description: "The very first point of call when in need of documentation", link: "https://wiki.jarrang.com/", icon: "archive" }, 
-            { title: "Process Visualisation", description: "A growing hub of approved processes that illustrate the company's workflow", link: "https://files.jarrang.com/Jarrang/process-visualisation/index.html", icon: "diagram-2", badge: "New" },
-            { title: "Client Relationship Handbook", description: "Breaks down the softer skills of client relationships", link: "https://docs.google.com/document/d/1KTIPW5wLbZKQWVRG_w_t3ATh4W_n2352lWY_4NSBmp8/edit", icon: "book" }
+            { title: "Jarrang Wiki", 
+              description: "The very first point of call when in need of documentation", 
+              link: "https://wiki.jarrang.com/", 
+              icon: "archive" },
+            { title: "Process Visualisation", 
+              description: "A growing hub of approved processes that illustrate the company's workflow", 
+              link: "https://files.jarrang.com/Jarrang/process-visualisation/index.html", 
+              icon: "diagram-2", 
+              badge: "New" },
+            { title: "Client Relationship Handbook", 
+              description: "Breaks down the softer skills of client relationships", 
+              link: "https://docs.google.com/document/d/1KTIPW5wLbZKQWVRG_w_t3ATh4W_n2352lWY_4NSBmp8/edit", 
+              icon: "book" }
           ] %}
           {% set scroll = false %}
           {% include "list.nunjucks" %}
 
           {% set title = "Brand" %}
           {% set items = [
-            { title: "Vision Mission Values", description: "A summary of who we are as a company & what Jarrang stands for", link: "http://vmv.jarrang.com/", icon: "easel" }, 
-            { title: "Brand Guidelines", description: "Ensures consistency in the Jarrang brand across all platforms", link: "#", icon: "palette", badge: "Coming soon" },
-            { title: "Canva", description: "This is how we produce our social media imagery", link: "https://canva.com/", icon: "columns-gap", badge: "New" }
+            { title: "Vision Mission Values", 
+              description: "A summary of who we are as a company & what Jarrang stands for", 
+              link: "http://vmv.jarrang.com/", icon: "easel" }, 
+            { title: "Brand Guidelines", description: "Ensures consistency in the Jarrang brand across all platforms", 
+              link: "#", icon: "palette", 
+              badge: "Coming soon" },
+            { title: "Canva", 
+              description: "This is how we produce our social media imagery", 
+              link: "https://canva.com/", icon: "columns-gap", 
+              badge: "New" }
           ] %}
           {% set scroll = false %}
           {% include "list.nunjucks" %}
 
           {% set title = "Employee Admin" %}
           {% set items = [
-            { title: "Harvest", description: "How we keep track of time spent", link: "https://app.timetastic.co.uk/wallchart#", icon: "hourglass-split" }, 
-            { title: "Timetastic", description: "The platform that Jarrang uses to manage employee holiday", link: "https://app.timetastic.co.uk/wallchart#", icon: "clock" },
-            { title: "Trello", description: "Manage ongoing projects with Trello", link: "https://trello.com/", icon: "kanban" },
-            { title: "Capacity Forecast", description: "A way of looking ahead in order to plan your workload", link: "https://docs.google.com/spreadsheets/d/1qrydG1F2DZVE08drpqy78Tp6nbFXhvu2QUi5u4uAg18/edit?ts=5faeb1df#gid=1067300933", icon: "kanban" },
-            { title: "Activity Trackers", description: "Keep track of your internal projects", link: "https://docs.google.com/spreadsheets/d/18FUwX6T5gOSk9gfMPnFXnCmkZfzZ4PVv7BKbVOUHzGQ/edit?ts=600ff9f6#gid=408525561", icon: "kanban", badge: "Q2 2021" },
-            { title: "Improvement Log", description: "An ongoing record of errors and how they were rectified", link: "https://docs.google.com/spreadsheets/d/18FUwX6T5gOSk9gfMPnFXnCmkZfzZ4PVv7BKbVOUHzGQ/edit?ts=600ff9f6#gid=408525561", icon: "kanban" }
+            { title: "Harvest", 
+              description: "How we keep track of time spent", 
+              link: "https://app.timetastic.co.uk/wallchart#", 
+              icon: "hourglass-split" }, 
+            { title: "Timetastic", 
+              description: "The platform that Jarrang uses to manage employee holiday", 
+              link: "https://app.timetastic.co.uk/wallchart#", 
+              icon: "clock" },
+            { title: "Trello", 
+              description: "Manage ongoing projects with Trello", 
+              link: "https://trello.com/", 
+              icon: "kanban" },
+            { title: "Capacity Forecast", 
+              description: "A way of looking ahead in order to plan your workload", 
+              link: "https://docs.google.com/spreadsheets/d/1qrydG1F2DZVE08drpqy78Tp6nbFXhvu2QUi5u4uAg18/edit?ts=5faeb1df#gid=1067300933", 
+              icon: "bar-chart-steps" },
+            { title: "Activity Trackers", 
+              description: "Keep track of your internal projects", 
+              link: "https://docs.google.com/spreadsheets/d/18FUwX6T5gOSk9gfMPnFXnCmkZfzZ4PVv7BKbVOUHzGQ/edit?ts=600ff9f6#gid=408525561", 
+              icon: "card-checklist", 
+              badge: "Q2 2021" },
+            { title: "Improvement Log", 
+              description: "An ongoing record of errors and how they were rectified", 
+              link: "https://docs.google.com/spreadsheets/d/18FUwX6T5gOSk9gfMPnFXnCmkZfzZ4PVv7BKbVOUHzGQ/edit?ts=600ff9f6#gid=408525561", 
+              icon: "journal-arrow-up" }
           ] %}
           {% set scroll = true %}
           {% include "list.nunjucks" %}
@@ -58,27 +94,54 @@
 
           {% set title = "Financials" %}
           {% set items = [
-            { title: "Client Price Guide", description: "The pricing matrix that we use to ensure consistency across clients when charging for projects", link: "https://wiki.jarrang.com/", icon: "cash-stack" }, 
-            { title: "Invoicing & PMs", description: "Spreadsheet detailing performance measures, client invoicing, and under/over usage", link: "https://files.jarrang.com/Jarrang/process-visualisation/index.html", icon: "receipt-cutoff" },
-            { title: "Link 3", description: "Description goes here", link: "#", icon: "link" }
+            { title: "Client Price Guide", 
+              description: "The pricing matrix that we use to ensure consistency when charging for projects", 
+              link: "https://wiki.jarrang.com/", 
+              icon: "cash-stack" }, 
+            { title: "Invoicing & PMs", 
+              description: "Spreadsheet detailing performance measures, client invoicing and more", 
+              link: "https://files.jarrang.com/Jarrang/process-visualisation/index.html", 
+              icon: "receipt-cutoff" },
+            { title: "Link 3", 
+              description: "Description goes here", 
+              link: "#", 
+              icon: "link" }
           ] %}
           {% set scroll = false %}
           {% include "list.nunjucks" %}
 
           {% set title = "Developer" %}
           {% set items = [
-            { title: "Github", description: "Where we store all of our code and track issues", link: "http://vmv.jarrang.com/", icon: "code-slash" }, 
-            { title: "Can I Email", description: "Useful tool to check compatibility of CSS features", link: "#", icon: "patch-question" },
-            { title: "Email Geeks", description: "Slack community to chat all things email marketing, design and code", link: "https://canva.com/", icon: "slack" }
+            { title: "Github", 
+              description: "Where we store all of our code and track issues", 
+              link: "http://vmv.jarrang.com/", 
+              icon: "code-slash" }, 
+            { title: "Can I Email", 
+              description: "Useful tool to check compatibility of CSS features", 
+              link: "#", 
+              icon: "patch-question" },
+            { title: "Email Geeks", 
+              description: "Slack community to chat all things email marketing, design and code", 
+              link: "https://canva.com/", 
+              icon: "slack" }
           ] %}
           {% set scroll = false %}
           {% include "list.nunjucks" %}
 
           {% set title = "Client Management" %}
           {% set items = [
-            { title: "Link 1", description: "Description goes here", link: "#", icon: "link" }, 
-            { title: "Link 2", description: "Description goes here", link: "#", icon: "link" },
-            { title: "Link 3", description: "Description goes here", link: "#", icon: "link" }
+            { title: "Link 1", 
+              description: "Description goes here", 
+              link: "#", 
+              icon: "link" }, 
+            { title: "Link 2", 
+              description: "Description goes here", 
+              link: "#", 
+              icon: "link" },
+            { title: "Link 3", 
+              description: "Description goes here", 
+              link: "#", 
+              icon: "link" }
           ] %}
           {% set scroll = false %}
           {% include "list.nunjucks" %}
@@ -91,32 +154,62 @@
 
           {% set title = "Foo" %}
           {% set items = [
-            { title: "Foo 1", description: "Here is a brief description", link: "https://google.com/", icon: "truck", badge: "New" }, 
-            { title: "Foo 2", description: "here is a description", link: "https://google.com/", icon: "pencil-square" },
-            { title: "Foo 3", description: "here is a description", link: "https://google.com/", icon: "award" }
+            { title: "Foo 1", 
+              description: "Here is a brief description", 
+              link: "https://google.com/", 
+              icon: "truck", 
+              badge: "New" }, 
+            { title: "Foo 2", 
+              description: "here is a description", 
+              link: "https://google.com/", 
+              icon: "pencil-square" },
+            { title: "Foo 3", 
+              description: "here is a description", 
+              link: "https://google.com/", 
+              icon: "award" }
           ] %}
           {% include "list.nunjucks" %}
 
           {% set title = "Bar" %}
           {% set items = [
-            { title: "Bar 1", description: "Here is a brief description", link: "https://google.com/", icon: "truck" }, 
-            { title: "Bar 2", description: "here is a description", link: "https://google.com/", icon: "pencil-square", badge: "New" },
-            { title: "Bar 3", description: "here is a description", link: "https://google.com/", icon: "award" }
+            { title: "Bar 1", 
+              description: "Here is a brief description", 
+              link: "https://google.com/", 
+              icon: "truck" }, 
+            { title: "Bar 2", 
+              description: "here is a description", 
+              link: "https://google.com/", 
+              icon: "pencil-square", 
+              badge: "New" },
+            { title: "Bar 3", 
+              description: "here is a description", 
+              link: "https://google.com/", 
+              icon: "award" }
           ] %}
           {% include "list.nunjucks" %}
 
           {% set title = "Egg" %}
           {% set items = [
-            { title: "Egg 1", description: "Here is a brief description", link: "https://google.com/", icon: "truck", badge: "New" }, 
-            { title: "Egg 2", description: "here is a description", link: "https://google.com/", icon: "pencil-square" },
-            { title: "Egg 3", description: "here is a description", link: "https://google.com/", icon: "award" }
+            { title: "Egg 1", 
+              description: "Here is a brief description", 
+              link: "https://google.com/", 
+              icon: "truck", 
+              badge: "New" }, 
+            { title: "Egg 2", 
+              description: "here is a description", 
+              link: "https://google.com/", 
+              icon: "pencil-square" },
+            { title: "Egg 3", 
+              description: "here is a description", 
+              link: "https://google.com/", 
+              icon: "award" }
           ] %}
           {% include "list.nunjucks" %}
 
         </div>
 #}
 
-    {% set last_updated = "09 Feb 2021" %}
+    {% set last_updated = "10 Feb 2021" %}
     {% include "updated.nunjucks" %}
 
 {% include "footer.nunjucks" %}
