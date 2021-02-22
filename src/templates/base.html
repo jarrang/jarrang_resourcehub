@@ -42,27 +42,29 @@
           {% set scroll = false %}
           {% include "list.nunjucks" %}
 
-          {% set title = "Brand" %}
+          {% set title = "Insights & Inspiration" %}
           {% set items = [
-            { title: "Vision Mission Values", 
-              description: "A summary of who we are as a company & what Jarrang stands for", 
-              link: "http://vmv.jarrang.com/", icon: "easel" }, 
-            { title: "Brand Guidelines", description: "Ensures consistency in the Jarrang brand across all platforms", 
-              link: "#", icon: "palette", 
-              badge: "Coming soon" },
-            { title: "Canva", 
-              description: "This is how we produce our social media imagery", 
-              link: "https://canva.com/", icon: "columns-gap", 
-              badge: "New" }
+            { title: "DMA", 
+              description: "Membership insights into email statistics, reports, webinars etc", 
+              link: "https://dma.org.uk/", 
+              icon: "graph-up", 
+              badge: "New" }, 
+            { title: "Really Good Emails", 
+              description: "Website for up to date email tips and ideas", 
+              link: "https://reallygoodemails.com/", 
+              icon: "envelope" },
+            { title: "HTML Email Designs", 
+              description: "A good source of email design inspiration", 
+              link: "http://htmlemaildesigns.com/", 
+              icon: "lightbulb" }
           ] %}
-          {% set scroll = false %}
           {% include "list.nunjucks" %}
 
           {% set title = "Employee Admin" %}
           {% set items = [
             { title: "Harvest", 
               description: "How we keep track of time spent", 
-              link: "https://app.timetastic.co.uk/wallchart#", 
+              link: "https://jarrang.harvestapp.com/overview", 
               icon: "hourglass-split" }, 
             { title: "Timetastic", 
               description: "The platform that Jarrang uses to manage employee holiday", 
@@ -72,9 +74,17 @@
               description: "Manage ongoing projects with Trello", 
               link: "https://trello.com/", 
               icon: "kanban" },
+            { title: "Slack", 
+              description: "Internal communications", 
+              link: "https://jarrang.slack.com/", 
+              icon: "slack" },
+            { title: "RingCentral", 
+              description: "Campaign/project amends and development", 
+              link: "https://www.ringcentral.co.uk/#ring-uk", 
+              icon: "pin-angle" },
             { title: "Capacity Forecast", 
               description: "A way of looking ahead in order to plan your workload", 
-              link: "https://docs.google.com/spreadsheets/d/1qrydG1F2DZVE08drpqy78Tp6nbFXhvu2QUi5u4uAg18/edit?ts=5faeb1df#gid=1067300933", 
+              link: "https://docs.google.com/spreadsheets/d/1JHKtLdQd7xj15Dqn720uAr1XV2XW3UKV5DIDhMYUN1I/edit?ts=601d7551#gid=0", 
               icon: "bar-chart-steps" },
             { title: "Activity Trackers", 
               description: "Keep track of your internal projects", 
@@ -83,8 +93,12 @@
               badge: "Q2 2021" },
             { title: "Improvement Log", 
               description: "An ongoing record of errors and how they were rectified", 
-              link: "https://docs.google.com/spreadsheets/d/18FUwX6T5gOSk9gfMPnFXnCmkZfzZ4PVv7BKbVOUHzGQ/edit?ts=600ff9f6#gid=408525561", 
-              icon: "journal-arrow-up" }
+              link: "https://docs.google.com/spreadsheets/d/17Ts8VpPVEHTifFelofZqVBVq6r7UhmvIoxpNp0ODObE/edit#gid=926046746", 
+              icon: "journal-arrow-up" },
+            { title: "LastPass", 
+              description: "Where we store all our passwords", 
+              link: "https://lastpass.com/", 
+              icon: "key" }
           ] %}
           {% set scroll = true %}
           {% include "list.nunjucks" %}
@@ -96,11 +110,11 @@
           {% set items = [
             { title: "Client Price Guide", 
               description: "The pricing matrix that we use to ensure consistency when charging for projects", 
-              link: "https://wiki.jarrang.com/", 
+              link: "https://docs.google.com/spreadsheets/d/1bnAN4JID5PdFUH4Rnv2coyB8ho-YGk394gAYgjM9ty4/edit#gid=544957405", 
               icon: "cash-stack" }, 
             { title: "Invoicing & PMs", 
               description: "Spreadsheet detailing performance measures, client invoicing and more", 
-              link: "https://files.jarrang.com/Jarrang/process-visualisation/index.html", 
+              link: "https://docs.google.com/spreadsheets/d/1xNJD47emwuNW44YplLZ_Thi2yAltlcyQ2A0Ss7CNNYE/edit#gid=908247667", 
               icon: "receipt-cutoff" },
             { title: "Link 3", 
               description: "Description goes here", 
@@ -110,38 +124,126 @@
           {% set scroll = false %}
           {% include "list.nunjucks" %}
 
-          {% set title = "Developer" %}
+          {% set title = "Client Management" %}
           {% set items = [
-            { title: "Github", 
-              description: "Where we store all of our code and track issues", 
-              link: "http://vmv.jarrang.com/", 
-              icon: "code-slash" }, 
-            { title: "Can I Email", 
-              description: "Useful tool to check compatibility of CSS features", 
+            { title: "Podio", 
+              description: "Platform for noting any new sales deals or ad hoc projects", 
               link: "#", 
-              icon: "patch-question" },
-            { title: "Email Geeks", 
-              description: "Slack community to chat all things email marketing, design and code", 
-              link: "https://canva.com/", 
-              icon: "slack" }
+              icon: "receipt-cutoff" }, 
+            { title: "Motability Handbook", 
+              description: "All you need to know about our relationship with MO", 
+              link: "https://drive.google.com/file/d/1r68FzeYDe3OXoB-_Ag5cUFTiZLriqyOh/view?usp=sharing", 
+              icon: "truck" },
+            { title: "Jarrang Lookbook", 
+              description: "Visual ideas to show clients for new campaign ideas (GIF animations, hyper-personalisation)", 
+              link: "https://www.jarrang.com/lookbook", 
+              icon: "book" },
+            { title: "Emojipedia", 
+              description: "Where we source emojis for campaigns", 
+              link: "https://emojipedia.org/", 
+              icon: "emoji-smile" }
           ] %}
           {% set scroll = false %}
           {% include "list.nunjucks" %}
 
-          {% set title = "Client Management" %}
+          {% set title = "Developer" %}
           {% set items = [
-            { title: "Link 1", 
-              description: "Description goes here", 
+            { title: "Github", 
+              description: "Where we store all of our code and track issues", 
+              link: "https://github.com/", 
+              icon: "code-slash" }, 
+            { title: "Can I Email", 
+              description: "Useful tool to check compatibility of CSS features", 
+              link: "https://www.caniemail.com/", 
+              icon: "patch-question" },
+            { title: "Email Geeks", 
+              description: "Slack community to chat all things email marketing, design and code", 
+              link: "https://email.geeks.chat/", 
+              icon: "slack" },
+            { title: "Detergent", 
+              description: "a tool to prepare text for pasting into HTML", 
+              link: "https://detergent.io/light", 
+              icon: "blockquote-left" }
+          ] %}
+          {% set scroll = true %}
+          {% include "list.nunjucks" %}
+
+        </div>
+
+        <div class="row">
+
+          {% set title = "Brand" %}
+          {% set items = [
+            { title: "Vision Mission Values", 
+              description: "A summary of who we are as a company & what Jarrang stands for", 
+              link: "http://vmv.jarrang.com/", 
+              icon: "easel" }, 
+            { title: "Brand Guidelines", 
+              description: "Ensures consistency in the Jarrang brand across all platforms", 
               link: "#", 
-              icon: "link" }, 
-            { title: "Link 2", 
-              description: "Description goes here", 
-              link: "#", 
-              icon: "link" },
-            { title: "Link 3", 
-              description: "Description goes here", 
-              link: "#", 
-              icon: "link" }
+              icon: "palette", 
+              badge: "Coming soon" },
+            { title: "Marketing Schedule", 
+              description: "A way to keep track of blog posts and social media", 
+              link: "https://docs.google.com/spreadsheets/d/1e16i0g6HTtjgl6H544N7TPCxAvj54CYWPBO8y97vxqY/edit?ts=5fda08bc#gid=993034070", 
+              icon: "calendar-week" },
+            { title: "Canva", 
+              description: "This is how we produce our social media imagery", 
+              link: "https://canva.com/", 
+              icon: "columns-gap", 
+              badge: "New" }
+          ] %}
+          {% set scroll = false %}
+          {% include "list.nunjucks" %}
+
+          {% set title = "Creative Resources" %}
+          {% set items = [
+            { title: "Better Placeholder", 
+              description: "GUI to create placeholder images", 
+              link: "https://betterplaceholder.com/?ref=tiny-helpers", 
+              icon: "image" }, 
+            { title: "Unsplash", 
+              description: "A source of freely-usage images", 
+              link: "https://unsplash.com/", 
+              icon: "image-alt" },
+            { title: "Image Extractor", 
+              description: "Download images from any public website by using a virtual browser", 
+              link: "https://extract.pics/", 
+              icon: "cloud-arrow-down" }, 
+            { title: "Subtle Patterns", 
+              description: "Repeatable patterns, good for backgrounds", 
+              link: "https://www.toptal.com/designers/subtlepatterns/", 
+              icon: "grid-3x3" },
+            { title: "Coolors", 
+              description: "Colour palette generator and inspiration", 
+              link: "https://coolors.co/", 
+              icon: "palette" },
+            { title: "Colouris", 
+              description: "Convert colour values", 
+              link: "https://colouris.surge.sh/", 
+              icon: "hexagon-half" },
+            { title: "Grabient", 
+              description: "Inspiration for attractive gradients", 
+              link: "https://www.grabient.com/", 
+              icon: "hexagon-half" }
+          ] %}
+          {% set scroll = true %}
+          {% include "list.nunjucks" %}
+
+          {% set title = "Fun" %}
+          {% set items = [
+            { title: "Categories", 
+              description: "Fun game for Friday afternoons", 
+              link: "https://swellgarfo.com/scattergories/", 
+              icon: "dice-5" }, 
+            { title: "Scriblio", 
+              description: "Fun game for Friday afternoons", 
+              link: "https://google.com/", 
+              icon: "pen" },
+            { title: "Pottermore", 
+              description: "Discovering what house new employees would be sorted into", 
+              link: "https://my.wizardingworld.com/sorting-hat", 
+              icon: "lightning" }
           ] %}
           {% set scroll = false %}
           {% include "list.nunjucks" %}
@@ -209,7 +311,7 @@
         </div>
 #}
 
-    {% set last_updated = "10 Feb 2021" %}
+    {% set last_updated = "22 Feb 2021" %}
     {% include "updated.nunjucks" %}
 
 {% include "footer.nunjucks" %}

@@ -7,7 +7,7 @@
         </ol>
         <div class="carousel-inner shadow-sm">
           <div class="carousel-item active">
-            <a href="https://www.youtube.com/watch?v=vbg7eFkcPKk&t=81s" target="_blank">
+            <a href="https://www.jarrang.com/blog/jarrang-email-marketing-podcast-ep-1-nick-crawford-and-hannah-vaughan" target="_blank">
               <img src="{{ image_1 | safe }}" class="d-block w-100" alt="...">
             </a>
             <div class="carousel-caption d-none d-md-block">
