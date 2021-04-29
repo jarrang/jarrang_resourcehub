@@ -47,8 +47,7 @@
             { title: "DMA", 
               description: "Membership insights into email statistics, reports, webinars etc", 
               link: "https://dma.org.uk/", 
-              icon: "graph-up", 
-              badge: "New" }, 
+              icon: "graph-up" }, 
             { title: "Really Good Emails", 
               description: "Website for up to date email tips and ideas", 
               link: "https://reallygoodemails.com/", 
@@ -98,7 +97,12 @@
             { title: "LastPass", 
               description: "Where we store all our passwords", 
               link: "https://lastpass.com/", 
-              icon: "key" }
+              icon: "key" },
+            { title: "BrightPay", 
+              description: "View your payslip and other documents", 
+              link: "https://brightpay.cloud/Account/Login", 
+              icon: "wallet2",
+              badge: "New" }
           ] %}
           {% set scroll = true %}
           {% include "list.nunjucks" %}
@@ -115,11 +119,7 @@
             { title: "Invoicing & PMs", 
               description: "Spreadsheet detailing performance measures, client invoicing and more", 
               link: "https://docs.google.com/spreadsheets/d/1xNJD47emwuNW44YplLZ_Thi2yAltlcyQ2A0Ss7CNNYE/edit#gid=908247667", 
-              icon: "receipt-cutoff" },
-            { title: "Link 3", 
-              description: "Description goes here", 
-              link: "#", 
-              icon: "link" }
+              icon: "receipt-cutoff" }
           ] %}
           {% set scroll = false %}
           {% include "list.nunjucks" %}
@@ -311,7 +311,7 @@
         </div>
 #}
 
-    {% set last_updated = "22 Feb 2021" %}
+    {% set last_updated = "29 April 2021" %}
     {% include "updated.nunjucks" %}
 
 {% include "footer.nunjucks" %}

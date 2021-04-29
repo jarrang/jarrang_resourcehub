@@ -26,12 +26,12 @@
             </div>
           </div>
           <div class="carousel-item">
-            <a href="https://vmv.jarrang.com/" target="_blank">
+            <a href="https://www.emailscorecard.co.uk/" target="_blank">
               <img src="{{ image_3 | safe }}" class="d-block w-100" alt="...">
             </a>
             <div class="carousel-caption d-none d-md-block">
-              <h5>Vision Mission Values</h5>
-              <p>Find out what Jarrang is all about</p>
+              <h5>Email Scorecard</h5>
+              <p>Score your email marketing</p>
             </div>
           </div>
         </div>
