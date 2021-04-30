@@ -21,6 +21,59 @@
 
         {% include "spacer.nunjucks" %}
 
+        {#}<div class="row">
+          {% set title = "Products" %}
+          {% include "products.nunjucks" %}
+        </div> {#}
+
+        <div class="row">
+          {% set title = "Core Products" %}
+          {% set items = [
+            { title: "Academy", 
+              description: "A course in which to develop an industry-standard email marketing skillset", 
+              link: "https://www.jarrang.com/academy", 
+              icon: "book" },
+            { title: "Masters", 
+              description: "The go-to email marketing community for marketing professionals", 
+              link: "https://www.jarrang.com/masters", 
+              icon: "people" },
+            { title: "Sessions", 
+              description: "Join us as we speak to a variety of special guests involved in the industry", 
+              link: "https://www.jarrang.com/podcast", 
+              icon: "mic" }
+          ] %}
+          {% set scroll = false %}
+          {% include "list.nunjucks" %}
+
+          {% set title = "'By Jarrang' Products" %}
+          {% set items = [
+            { title: "Email Scorecard", 
+              description: "Rank your email marketing", 
+              link: "https://www.emailscorecard.co.uk/", 
+              icon: "speedometer",
+              badge: "New" },
+            { title: "On The List", 
+              description: "Breaks down the softer skills of client relationships", 
+              link: "https://www.jarrang.com/onthelist", 
+              icon: "calendar2-check" },
+            { title: "MailAway", 
+              description: "Breaks down the softer skills of client relationships", 
+              link: "https://www.jarrang.com/mailaway", 
+              icon: "envelope" },
+            { title: "Email Templates", 
+              description: "Breaks down the softer skills of client relationships", 
+              link: "#", 
+              badge: "Coming soon",
+              icon: "layout-text-window" }
+          ] %}
+          {% set scroll = true %}
+          {% include "list.nunjucks" %}
+
+          {% set title = "Latest Podcast" %}
+          {% set scroll = false %}
+          {% include "podcast.nunjucks" %}
+        </div>
+
         {# Each set of three list groups requires a new row #}
         <div class="row">
 
@@ -233,6 +286,10 @@
 
           {% set title = "Fun" %}
           {% set items = [
+            { title: "Email Scorecard", 
+              description: "Rank your email marketing", 
+              link: "https://www.emailscorecard.co.uk/", 
+              icon: "pie-chart" }, 
             { title: "Categories", 
               description: "Fun game for Friday afternoons", 
               link: "https://swellgarfo.com/scattergories/", 

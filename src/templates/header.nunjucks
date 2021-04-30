@@ -1,34 +1,7 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
   <div class="container-fluid">
-      <img src="https://uploads-ssl.webflow.com/5eb175b8c8c08b3a053f61b5/5eb2c8a01e474ea3e3aedd32_jarrang_logo_vector_CMYK_untextured.svg" width="150" height="32" class="d-inline-block align-top logo" alt="">
-    <a class="navbar-brand" href="#">Resource Hub</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.jarrang.com/academy" target="_blank">Academy</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.jarrang.com/masters" target="_blank">Masters</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.jarrang.com/podcast" target="_blank">Sessions</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Sub-brands
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="https://www.emailscorecard.co.uk/" target="_blank">Email Scorecard</a></li>
-            <li><a class="dropdown-item" href="https://jarrang.com/onthelist" target="_blank">On The List</a></li>
-            <li><a class="dropdown-item" href="https://www.jarrang.com/mailaway" target="_blank">MailAway</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item disabled" href="#" target="_blank">Email Template Factory (TBC)</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+    <a class="navbar-brand" href="#">
+    <img src="https://uploads-ssl.webflow.com/5eb175b8c8c08b3a053f61b5/5eb2c8a01e474ea3e3aedd32_jarrang_logo_vector_CMYK_untextured.svg" width="150" height="32" class="d-inline-block align-top logo" alt="">
+    Resource Hub</a>
   </div>
 </nav>
