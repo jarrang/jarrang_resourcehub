@@ -1,7 +1,7 @@
    <div class="col-sm hvr-grow">
     <h3 class="">{{ title | safe }}</h3>
     <div class="list-group shadow-sm overflow-auto">
-      <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="200" style="width:100%;max-width:660px;overflow:hidden;background:#F8F8FA;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/gb/podcast/jarrang-sessions-3-thad-cox-and-conor-wilson/id1551630062?i=1000515348366"></iframe>
+      <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="200" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/gb/{{ url_suffix }}"></iframe>
       <a class="btn btn-secondary" href="https://podcasts.apple.com/gb/podcast/the-jarrang-email-marketing-podcast/id1551630062" target="_blank" role="button">More episodes</a >   
     </div>
       

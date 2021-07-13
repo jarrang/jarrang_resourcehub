@@ -1,0 +1,287 @@
+{# Run 'gulp' in a terminal to render #}
+
+{% include "head.nunjucks" %}
+
+    {% include "header.nunjucks" %}
+
+    <div class="container">
+    
+        {% include "spacer.nunjucks" %}
+        {% include "spacer.nunjucks" %}
+        
+        {% set title = "Welcome to the Jarrang Resource Hub." %}
+        {% set subtitle = "This is a place to bring together all the various projects and resources that we use internally. If there is something missing that you would like added, contact <a href='mailto:rob@jarrang.com' target='_blank'>Rob Moran</a>" %}
+        {% include "alert.nunjucks" %}
+
+<ul class="nav nav-pills" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Daily Tasks</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">GIFs</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Projects</button>
+  </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Item</th>
+          <th scope="col">Fee - Retainer</th>
+          <th scope="col">Fee - Ad-Hoc</th>
+          <th scope="col">Dev Time Budget</th>
+          <th scope="col">CST Time Budget</th>
+          <th scope="col">Total Time Budget</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Standard Single Story (Postcard) - Content Supplied</td>
+          <td>£250</td>
+          <td>£300</td>
+          <td>1.50</td>
+          <td>0.75</td>
+          <td>2.25</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Standard Single Story (Postcard) - Content Created by Jarrang</td>
+          <td>£300</td>
+          <td>£350</td>
+          <td>1.50</td>
+          <td>1.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Standard 3x Multi-Story (Newsletter) - Content Supplied</td>
+          <td>£350</td>
+          <td>£400</td>
+          <td>2.00</td>
+          <td>1.00</td>
+          <td>3.00</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Standard 3 x Multi-Story (Newsletter) - Content Created by Jarrang</td>
+          <td>£450</td>
+          <td>£500</td>
+          <td>2.00</td>
+          <td>2.25</td>
+          <td>4.25</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Standard 5x Multi-Story (Newsletter) - Content Supplied</td>
+          <td>£400</td>
+          <td>£500</td>
+          <td>2.50</td>
+          <td>1.15</td>
+          <td>3.65</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Standard 5 x Multi-Story (Newsletter) - Content Created by Jarrang</td>
+          <td>£600</td>
+          <td>£700</td>
+          <td>2.50</td>
+          <td>3.25</td>
+          <td>5.75</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Dynamic Single-Story (Dynamic Postcard)* - Content Supplied</td>
+          <td>£300</td>
+          <td>£350</td>
+          <td>2.00</td>
+          <td>0.85</td>
+          <td>2.85</td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>Dynamic Single-Story (Dynamic Postcard)* - Content Created by Jarrang</td>
+          <td>£400</td>
+          <td>£450</td>
+          <td>2.00</td>
+          <td>1.75</td>
+          <td>3.75</td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>Dynamic 3 x Multi-Story (Dynamic Newsletter) - Content Supplied</td>
+          <td>£400</td>
+          <td>£500</td>
+          <td>2.50</td>
+          <td>1.00</td>
+          <td>3.50</td>
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td>Dynamic 3 x Multi-Story (Dynamic Newsletter) - Content Created by Jarrang</td>
+          <td>£550</td>
+          <td>£650</td>
+          <td>2.50</td>
+          <td>2.75</td>
+          <td>5.25</td>
+        </tr>
+        <tr>
+          <th scope="row">11</th>
+          <td>Dynamic 5 x Multi-Story (Dynamic Newsletter) - Content Supplied</td>
+          <td>£500</td>
+          <td>£600</td>
+          <td>3.00</td>
+          <td>1.25</td>
+          <td>4.25</td>
+        </tr>
+        <tr>
+          <th scope="row">12</th>
+          <td>Dynamic 5 x Multi-Story (Dynamic Newsletter) - Content Created by Jarrang</td>
+          <td>£700</td>
+          <td>£800</td>
+          <td>3.00</td>
+          <td>3.75</td>
+          <td>6.75</td>
+        </tr>
+        <tr>
+          <th scope="row">13</th>
+          <td>GIF (Basic)</td>
+          <td>£100</td>
+          <td>£100</td>
+          <td>0.75</td>
+          <td>0.25</td>
+          <td>1.00</td>
+        </tr>
+        <tr>
+          <th scope="row">14</th>
+          <td>GIF (Advanced). Price from:</td>
+          <td>£250</td>
+          <td>£250</td>
+          <td>2.00</td>
+          <td>0.25</td>
+          <td>2.25</td>
+        </tr>
+        <tr>
+          <th scope="row">15</th>
+          <td>Additional Story/ Module - Content Supplied</td>
+          <td>£35</td>
+          <td>£35</td>
+          <td>0.25</td>
+          <td>0.10</td>
+          <td>0.35</td>
+        </tr>
+        <tr>
+          <th scope="row">16</th>
+          <td>Additional Story/ Module - Content Created by Jarrang</td>
+          <td>£75</td>
+          <td>£75</td>
+          <td>0.25</td>
+          <td>0.50</td>
+          <td>0.75</td>
+        </tr>
+        <tr>
+          <th scope="row">17</th>
+          <td>Fastrack Deployment <24 hours</td>
+          <td>20%</td>
+          <td>20%</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">18</th>
+          <td>Standard Report - Silver Client</td>
+          <td>£0</td>
+          <td></td>
+          <td>0.00</td>
+          <td>0.60</td>
+          <td>0.60</td>
+        </tr>
+        <tr>
+          <th scope="row">19</th>
+          <td>Standard Report - Gold Client</td>
+          <td>£0</td>
+          <td></td>
+          <td>0.00</td>
+          <td>1.10</td>
+          <td>1.10</td>
+        </tr>
+        <tr>
+          <th scope="row">20</th>
+          <td>Volume - PAYG (per thousand)</td>
+          <td>£3</td>
+          <td>£3</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">21</th>
+          <td>Landing Page (data capture only - Content Supplied)</td>
+          <td>£375</td>
+          <td>£450</td>
+          <td>3.00</td>
+          <td>0.50</td>
+          <td>3.50</td>
+        </tr>
+        <tr>
+          <th scope="row">22</th>
+          <td>Landing Page (data capture only - Content Created by Jarrang)</td>
+          <td>£425</td>
+          <td>£475</td>
+          <td>3.00</td>
+          <td>0.90</td>
+          <td>3.90</td>
+        </tr>
+        <tr>
+          <th scope="row">23</th>
+          <td>Landing Page (data capture with auto-responder - Content Supplied)</td>
+          <td>£625</td>
+          <td>£700</td>
+          <td>5.00</td>
+          <td>1.00</td>
+          <td>6.00</td>
+        </tr>
+        <tr>
+          <th scope="row">24</th>
+          <td>Landing Page (data capture with auto-responder - Content Created by Jarrang)</td>
+          <td>£675</td>
+          <td>£725</td>
+          <td>5.00</td>
+          <td>1.30</td>
+          <td>6.30</td>
+        </tr>
+        <tr>
+          <th scope="row">25</th>
+          <td>Landing Page (Info only - Content Supplied)</td>
+          <td>£250</td>
+          <td>£300</td>
+          <td>2.00</td>
+          <td>0.25</td>
+          <td>2.25</td>
+        </tr>
+        <tr>
+          <th scope="row">26</th>
+          <td>Landing Page (Info only - Content Created by Jarrang)</td>
+          <td>£300</td>
+          <td>£350</td>
+          <td>2.00</td>
+          <td>0.65</td>
+          <td>2.65</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+</div>
+
+    {% set last_updated = "4 May 2021" %}
+    {% include "updated.nunjucks" %}
+
+{% include "footer.nunjucks" %}

@@ -26,6 +26,8 @@
           {% include "products.nunjucks" %}
         </div> {#}
 
+      {# Row 1 Col 1 - Core Products #}
+
         <div class="row">
           {% set title = "Core Products" %}
           {% set items = [
@@ -45,6 +47,8 @@
           {% set scroll = false %}
           {% include "list.nunjucks" %}
 
+      {# Row 1 Col 2 - By Jarrang Products #}
+
           {% set title = "'By Jarrang' Products" %}
           {% set items = [
             { title: "Email Scorecard", 
@@ -60,22 +64,27 @@
               description: "Simple, Reliable and Enjoyable email marketing", 
               link: "https://www.jarrang.com/mailaway", 
               icon: "envelope" },
-            { title: "Email Templates", 
+            { title: "The Email Workshop", 
               description: "Order a customised email template with our easy to use online form", 
-              link: "#", 
+              link: "#",
               badge: "Coming soon",
               icon: "layout-text-window" }
           ] %}
           {% set scroll = true %}
           {% include "list.nunjucks" %}
 
+      {# Row 1 Col 3 - Podcast #}
+
           {% set title = "Latest Podcast" %}
           {% set scroll = false %}
+          {% set url_suffix = "podcast/jarrang-sessions-5-tommy-tonkins-and-conor-wilson/id1551630062?i=1000525601353" %}
           {% include "podcast.nunjucks" %}
         </div>
 
         {# Each set of three list groups requires a new row #}
         <div class="row">
+
+      {# Row 2 Col 1 - Documentation #}
 
           {% set title = "Documentation" %}
           {% set items = [
@@ -86,15 +95,20 @@
             { title: "Process Visualisation", 
               description: "A growing hub of approved processes that illustrate the company's workflow", 
               link: "https://files.jarrang.com/Jarrang/process-visualisation/index.html", 
-              icon: "diagram-2", 
-              badge: "New" },
+              icon: "diagram-2" },
+            { title: "Jarrang Employee Handbook", 
+              description: "Details all company policies to adhere to as a Jarrang employee", 
+              link: "https://drive.google.com/file/d/1IzsIdaCOt_kPucHqM4QL67ZHlxLqOYiE/view?usp=sharing", 
+              icon: "journal-bookmark" },
             { title: "Client Relationship Handbook", 
               description: "Breaks down the softer skills of client relationships", 
               link: "https://docs.google.com/document/d/1KTIPW5wLbZKQWVRG_w_t3ATh4W_n2352lWY_4NSBmp8/edit", 
               icon: "book" }
           ] %}
-          {% set scroll = false %}
+          {% set scroll = true %}
           {% include "list.nunjucks" %}
+
+      {# Row 2 Col 2 - Insights & Inspiration #}
 
           {% set title = "Insights & Inspiration" %}
           {% set items = [
@@ -112,6 +126,8 @@
               icon: "lightbulb" }
           ] %}
           {% include "list.nunjucks" %}
+
+      {# Row 2 Col 3 - Employee Admin #}
 
           {% set title = "Employee Admin" %}
           {% set items = [
@@ -164,6 +180,8 @@
         </div>
         <div class="row">
 
+      {# Row 3 Col 1 - Financials #}
+
           {% set title = "Financials" %}
           {% set items = [
             { title: "Client Price Guide", 
@@ -181,6 +199,8 @@
           ] %}
           {% set scroll = false %}
           {% include "list.nunjucks" %}
+
+      {# Row 3 Col 2 - Client Management #}
 
           {% set title = "Client Management" %}
           {% set items = [
@@ -203,6 +223,8 @@
           ] %}
           {% set scroll = false %}
           {% include "list.nunjucks" %}
+
+      {# Row 3 Col 3 - Developer #}
 
           {% set title = "Developer" %}
           {% set items = [
@@ -230,6 +252,8 @@
 
         <div class="row">
 
+      {# Row 4 Col 1 - Brand #}
+
           {% set title = "Brand" %}
           {% set items = [
             { title: "Vision Mission Values", 
@@ -238,9 +262,9 @@
               icon: "easel" }, 
             { title: "Brand Guidelines", 
               description: "Ensures consistency in the Jarrang brand across all platforms", 
-              link: "#", 
+              link: "https://files.jarrang.com/Jarrang/Brand-Resources/Jarrang%20Brand%20Guidelines.pdf", 
               icon: "palette", 
-              badge: "Coming soon" },
+              badge: "New" },
             { title: "Marketing Schedule", 
               description: "A way to keep track of blog posts and social media", 
               link: "https://docs.google.com/spreadsheets/d/1e16i0g6HTtjgl6H544N7TPCxAvj54CYWPBO8y97vxqY/edit?ts=5fda08bc#gid=993034070", 
@@ -248,11 +272,12 @@
             { title: "Canva", 
               description: "This is how we produce our social media imagery", 
               link: "https://canva.com/", 
-              icon: "columns-gap", 
-              badge: "New" }
+              icon: "columns-gap" }
           ] %}
           {% set scroll = false %}
           {% include "list.nunjucks" %}
+
+      {# Row 4 Col 2 - Creative Resources #}
 
           {% set title = "Creative Resources" %}
           {% set items = [
@@ -287,6 +312,8 @@
           ] %}
           {% set scroll = true %}
           {% include "list.nunjucks" %}
+
+      {# Row 4 Col 3 - Fun #}
 
           {% set title = "Fun" %}
           {% set items = [

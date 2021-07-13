@@ -1,0 +1,83 @@
+{# Run 'gulp' in a terminal to render #}
+
+{% include "head.nunjucks" %}
+
+    {% include "header.nunjucks" %}
+
+    <div class="container">
+    
+        {% include "spacer.nunjucks" %}
+        {% include "spacer.nunjucks" %}
+        
+        {% set title = "Welcome to the Jarrang Resource Hub." %}
+        {% set subtitle = "This is a place to bring together all the various projects and resources that we use internally. If there is something missing that you would like added, contact <a href='mailto:rob@jarrang.com' target='_blank'>Rob Moran</a>" %}
+        {% include "alert.nunjucks" %}
+
+<ul class="nav nav-pills" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Tea</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Coffee</button>
+  </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Strength</th>
+          <th scope="col">Milk</th>
+          <th scope="col">Sugar</th>
+          <th scope="col">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Ben</th>
+          <td>Strong</td>
+          <td>No</td>
+          <td>2</td>
+          <td>£300</td>
+        </tr>
+        <tr>
+          <th scope="row">Conor</th>
+          <td>Strong</td>
+          <td>Yes</td>
+          <td>2</td>
+          <td>£350</td>
+        </tr>
+        <tr>
+          <th scope="row">Michael</th>
+          <td>Strong</td>
+          <td>Yes</td>
+          <td>1</td>
+          <td>£400</td>
+        </tr>
+        <tr>
+          <th scope="row">Rob</th>
+          <td>Strong</td>
+          <td>0</td>
+          <td>0</td>
+          <td>£500</td>
+        </tr>
+        <tr>
+          <th scope="row">Stafford</th>
+          <td>Strong</td>
+          <td>Yes</td>
+          <td>1</td>
+          <td>£500</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+</div>
+
+    {% set last_updated = "4 May 2021" %}
+    {% include "updated.nunjucks" %}
+
+{% include "footer.nunjucks" %}
