@@ -7,7 +7,7 @@
         </ol>
         <div class="carousel-inner shadow-sm">
           <div class="carousel-item active">
-            <a href="https://www.jarrang.com/blog/jarrang-email-marketing-podcast-ep-1-nick-crawford-and-hannah-vaughan" target="_blank">
+            <a href="https://www.jarrang.com/podcast" target="_blank">
               <img src="{{ image_1 | safe }}" class="d-block w-100" alt="...">
             </a>
             <div class="carousel-caption d-none d-md-block">
@@ -17,21 +17,21 @@
           </div>
           </a>
           <div class="carousel-item">
-            <a href="https://files.jarrang.com/Jarrang/process-visualisation/index.html" target="_blank">
+            <a href="https://jarrang.com/video" target="_blank">
               <img src="{{ image_2 | safe }}" class="d-block w-100" alt="...">
             </a>
             <div class="carousel-caption d-none d-md-block">
-              <h5>Process Visualisation</h5>
-              <p>View all of our internal processes in one place</p>
+              <h5>Video in Email</h5>
+              <p>Learn all about this brand new technology</p>
             </div>
           </div>
           <div class="carousel-item">
-            <a href="https://www.emailscorecard.co.uk/" target="_blank">
+            <a href="https://drive.google.com/file/d/1e3kPHCY7_zUjTAznCzlQNh3nnhmoPzeA/view?usp=sharing" target="_blank">
               <img src="{{ image_3 | safe }}" class="d-block w-100" alt="...">
             </a>
             <div class="carousel-caption d-none d-md-block">
-              <h5>Email Scorecard</h5>
-              <p>Score your email marketing</p>
+              <h5>Brand Guidelines</h5>
+              <p>A handy reference for everything brand related</p>
             </div>
           </div>
         </div>
