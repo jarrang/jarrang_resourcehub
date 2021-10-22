@@ -15,6 +15,35 @@ body {
     background-color: $white;
 }
 
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background: black!important;
+  }
+  
+  .bg {
+    background-image: url("../images/email-pattern-dark.png")!important;
+  }
+
+  .alert {
+    background-color: $dark;
+    border-color: $dark;
+    color: $white;
+
+    a {
+      color: $white;
+    }
+
+  }
+
+  .list-group-item {
+    background-color: $darker;
+  }
+
+  a, p, h1, h2, h3, h4, .mb-1 {
+    color: $white;
+  }
+}
+
 
 
 // Reusuable classes
