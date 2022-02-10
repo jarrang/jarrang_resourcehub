@@ -37,11 +37,20 @@ body {
 
   .list-group-item {
     background-color: $darker;
+
+    &:hover {
+      background-color: $dark;
+    }
   }
 
-  a, p, h1, h2, h3, h4, .mb-1 {
+  a, p, h1, h2, h3, h4, .mb-1, {
     color: $white;
   }
+
+  .accordion button, div{
+    color: white;
+  }
+
 }
 
 
