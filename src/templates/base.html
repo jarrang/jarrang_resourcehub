@@ -35,26 +35,21 @@
                   <div class="accordion-body">
                     <div class="row align-items-start">
                       <div class="col">
-                        <strong>Freyja:</strong><br>
-                        Join Zoom Meeting<br>
-                        <a href="https://zoom.us/j/7846112096?pwd=RGh1Z3NSY2JaNEN6dkVFcEtReWRWUT09" class="btn btn-outline-secondary mt-1 mb-1" role="button" data-bs-toggle="button">Open meeting room</a><br>
-                        Meeting ID: 784 611 2096<br>
-                        Passcode: MLW0cU<br><br>
 
                         <strong>Ben:</strong><br>
                         Join Zoom Meeting<br>
                         <a href="https://us06web.zoom.us/j/6730408977?pwd=ZXhOU3lkR2llNlhra2tRU3BSdU51dz09" class="btn btn-outline-secondary mt-1 mb-1" role="button" data-bs-toggle="button">Open meeting room</a><br>
                         Meeting ID: 673 040 8977<br>
                         Passcode: 2YB1U2<br><br>
-                      
-                      </div>
-                      <div class="col">
 
                         <strong>Mike:</strong><br>
                         Join Zoom Meeting<br>
                         <a href="https://us06web.zoom.us/j/9044994133?pwd=Ymlpa0c4UWJZQi9lK2lKdGwvelFwQT09" class="btn btn-outline-secondary mt-1 mb-1" role="button" data-bs-toggle="button">Open meeting room</a><br>
                         Meeting ID: 904 499 4133<br>
-                        Passcode: 817439<br><br>
+                        Passcode: 817439
+                      
+                      </div>
+                      <div class="col">
 
                         <strong>Stafford:</strong><br>
                         Join Zoom Meeting<br>
@@ -80,14 +75,6 @@
         <div class="row">
           {% set title = "Core Products" %}
           {% set items = [
-            { title: "Academy", 
-              description: "A course in which to develop an industry-standard email marketing skillset", 
-              link: "https://www.jarrang.com/academy", 
-              icon: "book" },
-            { title: "Masters", 
-              description: "The go-to email marketing community for marketing professionals", 
-              link: "https://www.jarrang.com/masters", 
-              icon: "people" },
             { title: "Sessions", 
               description: "Join us as we speak to a variety of special guests involved in the industry", 
               link: "https://www.jarrang.com/podcast", 
@@ -100,10 +87,6 @@
 
           {% set title = "'By Jarrang' Products" %}
           {% set items = [
-            { title: "Email Scorecard", 
-              description: "Free tool to rank your email marketing", 
-              link: "https://www.emailscorecard.co.uk/", 
-              icon: "speedometer" },
             { title: "On The List", 
               description: "Digital data capture form for venues to help support NHS Test & Trace", 
               link: "https://www.jarrang.com/onthelist", 
@@ -111,14 +94,9 @@
             { title: "MailAway", 
               description: "Simple, Reliable and Enjoyable email marketing", 
               link: "https://www.jarrang.com/mailaway", 
-              icon: "envelope" },
-            { title: "The Email Workshop", 
-              description: "Order a customised email template with our easy to use online form", 
-              link: "https://emailworkshop.co.uk/",
-              badge: "New",
-              icon: "layout-text-window" }
+              icon: "envelope" }
           ] %}
-          {% set scroll = true %}
+          {% set scroll = false %}
           {% include "list.nunjucks" %}
 
       {# Row 1 Col 3 - Podcast #}
@@ -136,31 +114,30 @@
 
           {% set title = "Documentation" %}
           {% set items = [
+            { title: "Jarrang Wiki", 
+              description: "The very first point of call when in need of documentation", 
+              link: "https://app.clickup.com/4697711/v/dc/4fbkf-7068", 
+              icon: "archive" },
+              { title: "Miro", 
+              description: "A growing hub of approved processes that illustrate the company's workflow", 
+              link: "https://miro.com/app/dashboard/", 
+              icon: "diagram-2" },
             { title: "SEO Content Template", 
               description: "Guidance on creating content with SEO in mind", 
               link: "https://docs.google.com/document/d/1Er8xjoRDwMZQbzY0Q2qQzWocchEvrn_B1OpISRLrlLA/edit?usp=sharing", 
-              icon: "search",
-              badge: "New" },
+              icon: "search" },
             { title: "Meeting Room Process", 
               description: "To help manage meeting spaces in the office", 
               link: "https://docs.google.com/document/d/1uB7cDemABOvE8I6Ep1BYjNX75YOJN_CrgbzE0djTDkM/edit", 
               icon: "camera-reels"},
             { title: "Network Pack", 
               description: "Details Jarrang's internal network setup", 
-              link: "https://docs.google.com/document/d/1O0s93NBBxV6xL9RpDRNP_IOV6ZkmZjTcjOQobjNv9RE/edit?usp=sharing", 
+              link: "https://app.clickup.com/4697711/v/dc/4fbkf-7068/4fbkf-9168", 
               icon: "hdd-network"},
             { title: "Mail Privacy Protection Guide", 
               description: "Internal guide to help break down the changes that MPP brings to the industry", 
               link: "https://docs.google.com/document/d/1mi1aqxH7YItZPB2x2QRmqD9f5azFnavkdDCeIU88VgY/edit?usp=sharing", 
               icon: "command" },
-            { title: "Jarrang Wiki", 
-              description: "The very first point of call when in need of documentation", 
-              link: "https://wiki.jarrang.com/", 
-              icon: "archive" },
-            { title: "Process Visualisation", 
-              description: "A growing hub of approved processes that illustrate the company's workflow", 
-              link: "https://files.jarrang.com/Jarrang/process-visualisation/index.html", 
-              icon: "diagram-2" },
             { title: "Jarrang Employee Handbook", 
               description: "Details all company policies to adhere to as a Jarrang employee", 
               link: "https://drive.google.com/file/d/1IzsIdaCOt_kPucHqM4QL67ZHlxLqOYiE/view?usp=sharing", 
@@ -177,18 +154,26 @@
 
           {% set title = "Insights & Inspiration" %}
           {% set items = [
-            { title: "DMA", 
-              description: "Membership insights into email statistics, reports, webinars etc", 
-              link: "https://dma.org.uk/", 
-              icon: "graph-up" }, 
             { title: "Really Good Emails", 
               description: "Website for up to date email tips and ideas", 
               link: "https://reallygoodemails.com/", 
               icon: "envelope" },
+              { title: "MailCharts", 
+              description: "Curated list of inspirational emails", 
+              link: "https://www.mailcharts.com/", 
+              icon: "envelope" },
+            { title: "DMA", 
+              description: "Membership insights into email statistics, reports, webinars etc", 
+              link: "https://dma.org.uk/", 
+              icon: "graph-up" }, 
             { title: "HTML Email Designs", 
               description: "A good source of email design inspiration", 
               link: "http://htmlemaildesigns.com/", 
-              icon: "lightbulb" }
+              icon: "lightbulb" },
+              { title: "Pinterest", 
+              description: "Useful source of design inspiration", 
+              link: "https://pinterest.com/", 
+              icon: "pin-fill" }
           ] %}
           {% include "list.nunjucks" %}
 
@@ -204,17 +189,17 @@
               description: "The platform that Jarrang uses to manage employee holiday", 
               link: "https://app.timetastic.co.uk/wallchart#", 
               icon: "clock" },
-            { title: "Trello", 
-              description: "Manage ongoing projects with Trello", 
-              link: "https://trello.com/", 
+            { title: "ClickUp", 
+              description: "Manage ongoing projects with ClickUp", 
+              link: "https://app.clickup.com/4697711/v/l/4-44424912-1", 
               icon: "kanban" },
             { title: "Slack", 
               description: "Internal communications", 
               link: "https://jarrang.slack.com/", 
               icon: "slack" },
-            { title: "RingCentral", 
-              description: "Campaign/project amends and development", 
-              link: "https://www.ringcentral.co.uk/#ring-uk", 
+            { title: "Litmus", 
+              description: "Campaign/project amends and testing", 
+              link: "https://litmus.com/home", 
               icon: "pin-angle" },
             { title: "L10 Meeting", 
               description: "Agenda, Scorecard, Rocks and Long Term Issues", 
@@ -227,12 +212,7 @@
             { title: "BrightPay", 
               description: "View your payslip and other documents", 
               link: "https://brightpay.cloud/Account/Login", 
-              icon: "wallet2" },
-            { title: "Annual Leave Checklist", 
-              description: "A guide on what needs doing prior to annual leave", 
-              link: "https://wiki.jarrang.com/annual_leave_checklist", 
-              icon: "emoji-sunglasses",
-              badge: "New" }
+              icon: "wallet2" }
           ] %}
           {% set scroll = true %}
           {% include "list.nunjucks" %}
@@ -244,19 +224,16 @@
 
           {% set title = "Financials" %}
           {% set items = [
-            { title: "Client Price Guide", 
+            { title: "Price Guide", 
               description: "The pricing matrix that we use to ensure consistency when charging for projects", 
-              link: "https://docs.google.com/spreadsheets/d/1bnAN4JID5PdFUH4Rnv2coyB8ho-YGk394gAYgjM9ty4/edit#gid=544957405", 
-              icon: "cash-stack" }, 
+              link: "https://docs.google.com/spreadsheets/d/1pspXYKXLJMEn_Vl9j6xQMifxmCSc17RWQtCo7hbOy5E/edit?usp=share_link", 
+              icon: "cash-stack",
+              badge: "FY22" },
             { title: "Invoicing & PMs", 
               description: "Spreadsheet detailing performance measures, client invoicing and more", 
               link: "https://docs.google.com/spreadsheets/d/1Ok7SlJncEzcyepQpNXqithcoU_Ata6xmoiNOd_p159o/edit?usp=sharing", 
               icon: "receipt-cutoff",
-              badge: "FY22" },
-            { title: "Motability Price Guide", 
-              description: "A pricing matrix specific to this client", 
-              link: "https://docs.google.com/spreadsheets/d/1xNJD47emwuNW44YplLZ_Thi2yAltlcyQ2A0Ss7CNNYE/edit#gid=908247667", 
-              icon: "truck" }
+              badge: "FY22" }
           ] %}
           {% set scroll = false %}
           {% include "list.nunjucks" %}
@@ -267,13 +244,11 @@
           {% set items = [
             { title: "Client Red Flags Document", 
               description: "A helpful list of warning signs to listen out for when speaking with clients", 
-              link: "https://docs.google.com/document/d/1x1ebpbS8cjB8Ul8ciWTYGVv3otrrx7YCli52oy8vfzY/edit#", 
-              badge: "NEW",
+              link: "https://docs.google.com/document/d/1x1ebpbS8cjB8Ul8ciWTYGVv3otrrx7YCli52oy8vfzY/edit#",
               icon: "flag" }, 
             { title: "Hubspot", 
               description: "Platform for noting any new sales deals and projects", 
-              link: "https://www.hubspot.com/", 
-              badge: "NEW",
+              link: "https://www.hubspot.com/",
               icon: "receipt-cutoff" }, 
             { title: "Motability Handbook", 
               description: "All you need to know about our relationship with MO", 
@@ -350,17 +325,9 @@
             { title: "Brand Guidelines", 
               description: "Ensures consistency in the Jarrang brand across all platforms", 
               link: "https://files.jarrang.com/Jarrang/Brand-Resources/Jarrang%20Brand%20Guidelines.pdf", 
-              icon: "palette" },
-            { title: "Marketing Schedule", 
-              description: "A way to keep track of blog posts and social media", 
-              link: "https://docs.google.com/spreadsheets/d/1e16i0g6HTtjgl6H544N7TPCxAvj54CYWPBO8y97vxqY/edit?ts=5fda08bc#gid=993034070", 
-              icon: "calendar-week" },
-            { title: "Canva", 
-              description: "This is how we produce our social media imagery", 
-              link: "https://canva.com/", 
-              icon: "columns-gap" }
+              icon: "palette" }
           ] %}
-          {% set scroll = true %}
+          {% set scroll = false %}
           {% include "list.nunjucks" %}
 
       {# Row 4 Col 2 - Creative Resources #}
@@ -493,7 +460,7 @@
         </div>
 #}
 
-    {% set last_updated = "13 September 2021" %}
+    {% set last_updated = "11 November 2022" %}
     {% include "updated.nunjucks" %}
 
 {% include "footer.nunjucks" %}
